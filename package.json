@@ -1,0 +1,39 @@
+{
+  "name": "github-status-health",
+  "version": "1.0.0",
+  "description": "A Node Express server app that serves RSS feed health/status to a client web page using EJS",
+  "main": "src/rssServer.js",
+  "scripts": {
+    "start": "node src/rssServer.js",
+    "dev": "nodemon src/rssServer.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "github",
+    "status",
+    "rss",
+    "express",
+    "ejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nock": "^13.3.3",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
